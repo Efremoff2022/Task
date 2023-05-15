@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-form-styler@2.0.2/dist/jquery.formstyler.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Тестовое задание</title>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="sectionUp">
+            <div class="logo__nav">
+                <div class="logo">
+                    <img src="../Employ/img/logo-loremIpsum.Net.svg">
+                </div>
+
+                <nav class="nav">
+                    <p class="nav__list">БИЗНЕС</p>
+                    <p class="nav__list">О НАС</p>
+                    <p class="nav__list">ЦЕНЫ</p>
+                    <p class="nav__list">ОФОРМИТЬ ЗАКАЗ</p>
+                </nav>
+            </div>
+        </div>
+
+        <container class="container">
+            <div class="box__header">
+                <div class="header__h1"><span class="color__special">LOREM IPSUM&nbsp;</span>DOLOR SIT
+                    AMETCONSECTETUR&nbsp;<span class="color__special">ADIPISCING</span></div>
+                <div class="header__text">
+                    <p class="text1">At vero eos et accusamus et iusto odio dignissimos ducimus!</p>
+                    <p class="text">&nbsp;- Totam rem aperiam eaque ipsa</p>
+                    <p class="text">&nbsp;- Sit voluptatem accusantium doloremque laudantium</p>
+                    <p class="text">&nbsp;- Sed ut perspiciatis, unde omnis iste natus error</p>
+                </div>
+                <div class="container__buttons">
+                    <button class="btn_1">ЗАКАЗАТЬ</button>
+                    <button class="btn_2">ПОДРОБНЕЕ</button>
+                </div>
+            </div>
+        </container>
+    </header>
+
+    <main class="main">
+        <section class="content">
+            <div class="registration">
+                <div class="zakaz">
+                    <h2 class="zakaz__h2">ОФОРМЛЕНИЕ <span class="color__special">ЗАКАЗА</span></h2>
+                    <p class="zakaz__p">Перед заполнением формы ознакомьтесь с нашей схемой работы!</p>
+                </div>
+
+                <div class="group15">
+                    <div class="circles">
+                        <div class="circle1"><img src="../Employ/img/magnifier.svg"></div>
+                        <div class="point"></div>
+                        <div class="point"></div>
+                        <div class="point"></div>
+                        <div class="point"></div>
+                        <div class="point"></div>
+
+                        <div class="circle2"><img src="../Employ/img/percent.svg"></div>
+                        <div class="point"></div>
+                        <div class="point"></div>
+                        <div class="point"></div>
+                        <div class="point"></div>
+                        <div class="point"></div>
+
+                        <div class="circle3"><img src="../Employ/img/doc.svg"></div>
+                        <div class="point"></div>
+                        <div class="point"></div>
+                        <div class="point"></div>
+                        <div class="point"></div>
+                        <div class="point"></div>
+
+                        <div class="circle4"><img src="../Employ/img/email.svg"></div>
+                        <div class="point"></div>
+                        <div class="point"></div>
+                        <div class="point"></div>
+                        <div class="point"></div>
+                        <div class="point"></div>
+
+                        <div class="circle5"><img src="../Employ/img/money.svg"></div>
+                    </div>
+
+                    <div class="circles__text__container">
+                        <div class="circles__text__content1">
+                            <p class="circl__text_p">Lorem ipsum dolor sit amet</p>
+                        </div>
+
+                        <div class="circles__text__content2">
+                            <p class="circl__text_p">Сonsecteturadipiscing elit</p>
+                        </div>
+
+                        <div class="circles__text__content3">
+                            <p class="circl__text_p">Sed do eiusmod tempor</p>
+                        </div>
+
+                        <div class="circles__text__content4">
+                            <p class="circl__text_p">Esse cillum dolore eu fugiat</p>
+                        </div>
+
+                        <div class="circles__text__content5">
+                            <p class="circl__text_p">Excepteur sint occaecat cupidatat non proident</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="forms">
+                <form class="select__input">
+                    <select class="select" id="iselect" form="auth" required>
+                        <option selected disabled class="option">Выберите тип системы</option>
+                        <option class="option" value="v1">Sed ut perspiciatis</option>
+                        <option class="option" value="v2">Nemo enim ipsam</option>
+                        <option class="option" value="v3">Et harum quidem</option>
+                        <option class="option" value="v4">Temporibus autem</option>
+                        <option class="option" value="v5">Itaque earum rerum</option>
+                    </select>
+                    <input class="inputs__formup" id="input__email" maxlength="35" name="e-mail"
+                        placeholder="Ваш e-mail" form="auth" required>
+                    <input class="inputs__formup" id="input__user" maxlength="35" name="user" placeholder="Ваше имя"
+                        form="auth" required>
+                </form>
+
+                <form class="range__file">
+                    <div class="spaninran">
+                        <div class="input__span">
+                            <p style="margin: 0; color: white;">Sed ut perspiciatis, unde omnis iste natus</p>
+                            <label style="color: white;"><span id="value"></span>%</label>
+                        </div>
+                        <input class="range__this" type="range" min="0" max="100" value="50" name="range" id="myRange" style="background-color: transparent;">
+                    </div>
+                    <button class="btn__input__file" 
+                    onclick="document.getElementById('getFile').click()"><span class="btn__file__text">Прикрепить
+                        файл</span></button>
+                    <input type='file' id="getFile" style="display:none">
+                </form>
+
+                <form class="btn__form" method="get">
+                    <button type="submit" value="Отправить" form="auth" class="forma__btn">Отправить</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <script src="main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</body>
+</html>
